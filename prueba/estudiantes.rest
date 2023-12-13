@@ -1,0 +1,42 @@
+GET http://127.0.0.1:5000/estudiantes
+
+###
+GET http://127.0.0.1:5000/estudiantes/:5
+
+###
+POST http://127.0.0.1:5000/estudiantes
+Accept: application/json
+Content-Type: application/json
+
+{
+"id_e": "14",
+"nombre_e": "yoyy",
+"apellido_e":"rueda",
+"email_e": "sa@gmail.com",
+"telefono_e": "184952",
+"direccion_e": "csan juan"
+
+}
+
+
+###
+PUT http://127.0.0.1:5000/estudiantes/:1
+Accept: application/json
+Content-Type: application/json
+
+{
+"id_e": "4",
+"nombre_e": "Sebas",
+"apellido_e":"ramos",
+"email_e": "carlos@gmail.com",
+"telefono_e": "15487",
+"direccion_e": "colombia"
+}
+
+###
+DELETE  http://127.0.0.1:5000/estudiantes/:1
+
+###
+GET https://testinf530.000webhostapp.com/estudiantes2023
+Accept: application/json
+Content-Type: application/json
